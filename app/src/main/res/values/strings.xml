@@ -14,4 +14,11 @@
         <item>A vehicle used for travelling or carrying things into space, which is shaped like a big tube.</item>
     </string-array>
 
+    <string-array name="colors">
+        <item >#312f31</item>
+        <item >#f04a4c</item>
+        <item >#642b51</item>
+        <item >#06b4cf</item>
+    </string-array>
+
 </resources>
