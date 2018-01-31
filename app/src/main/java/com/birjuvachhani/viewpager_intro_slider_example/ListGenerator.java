@@ -14,12 +14,13 @@ public class ListGenerator {
 
     String[] titles;
     String[] descriptions;
-    int[] colors = {R.color.dark_grey, R.color.red, R.color.dark_purple, R.color.light_blue};
+    String [] colors;
     int[] images = {R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4};
 
     public ListGenerator(Context context) {
         titles = context.getResources().getStringArray(R.array.titles);
         descriptions = context.getResources().getStringArray(R.array.descriptions);
+        this.colors=context.getResources().getStringArray(R.array.colors);
     }
 
     public List<DataHolder> generate() {
@@ -28,7 +29,7 @@ public class ListGenerator {
             String title = titles[i];
             String desc = descriptions[i];
             int imageId = images[i];
-            int color = colors[i];
+            int color = Color.parseColor(colors[i]);
             DataHolder dataHolder = new DataHolder(title, desc, imageId, color);
             mlist.add(dataHolder);
         }
