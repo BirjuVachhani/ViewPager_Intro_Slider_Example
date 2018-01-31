@@ -1,12 +1,12 @@
 package com.birjuvachhani.viewpager_intro_slider_example;
 
-import android.app.Activity;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import java.util.List;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     private ViewPager viewPager;
 
@@ -19,7 +19,7 @@ public class MainActivity extends Activity {
 
         List<DataHolder> mlist = new ListGenerator(this).generate();
 
-        SlideAdapter adapter = new SlideAdapter(this, mlist);
+        SlideAdapter adapter = new SlideAdapter(this, mlist, getSupportFragmentManager());
 
         viewPager.setAdapter(adapter);
     }
