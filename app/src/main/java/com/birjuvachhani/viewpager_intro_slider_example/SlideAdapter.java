@@ -37,6 +37,6 @@ public class SlideAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return "PAGE "+(position+1);
+        return "PAGE " + (position + 1);
     }
 }
