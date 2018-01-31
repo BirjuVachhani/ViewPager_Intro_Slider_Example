@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">ViewPager_Intro_Slider_Example</string>
+    <string-array name="titles">
+        <item>COSMONAUT</item>
+        <item>SATELLITE</item>
+        <item>GALAXY</item>
+        <item>SPACECRAFT</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>A person trained by a human spaceflight program to command, pilot, or serve as a crew member of a spacecraft.</item>
+        <item>An artificial body placed in orbit round the earth or another planet in order to collect information or for communication.</item>
+        <item>A system of millions or billions of stars, together with gas and dust, held together by gravitational attraction.</item>
+        <item>A vehicle used for travelling or carrying things into space, which is shaped like a big tube.</item>
+    </string-array>
+
 </resources>
