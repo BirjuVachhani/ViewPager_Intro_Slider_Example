@@ -14,13 +14,13 @@ public class ListGenerator {
 
     String[] titles;
     String[] descriptions;
-    String [] colors;
+    String[] colors;
     int[] images = {R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4};
 
     public ListGenerator(Context context) {
         titles = context.getResources().getStringArray(R.array.titles);
         descriptions = context.getResources().getStringArray(R.array.descriptions);
-        this.colors=context.getResources().getStringArray(R.array.colors);
+        this.colors = context.getResources().getStringArray(R.array.colors);
     }
 
     public List<DataHolder> generate() {

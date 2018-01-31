@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         List<DataHolder> mlist = new ListGenerator(this).generate();
 
-        SlideAdapter adapter=new SlideAdapter(this,mlist);
+        SlideAdapter adapter = new SlideAdapter(this, mlist);
 
         viewPager.setAdapter(adapter);
     }
