@@ -9,6 +9,16 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.PagerTitleStrip
+            android:id="@+id/title_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_grey"
+            android:layout_gravity="bottom"
+            android:background="@android:color/white"
+            android:padding="16dp" />
+    </android.support.v4.view.ViewPager>
 
 </LinearLayout>

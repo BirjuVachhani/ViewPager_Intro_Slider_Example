@@ -61,4 +61,9 @@ public class SlideAdapter extends PagerAdapter {
     public boolean isViewFromObject(View view, Object object) {
         return (view == (LinearLayout) object);
     }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return mlist.get(position).getTitle();
+    }
 }
