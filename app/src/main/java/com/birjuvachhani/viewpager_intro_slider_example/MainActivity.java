@@ -18,5 +18,9 @@ public class MainActivity extends AppCompatActivity {
         viewPager = (ViewPager) findViewById(R.id.view_pager);
 
         List<DataHolder> mlist = new ListGenerator(this).generate();
+
+        SlideAdapter adapter=new SlideAdapter(this,mlist);
+
+        viewPager.setAdapter(adapter);
     }
 }
