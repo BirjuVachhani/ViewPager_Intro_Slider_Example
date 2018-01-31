@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         viewPager = (ViewPager) findViewById(R.id.view_pager);
-        
+
         List<DataHolder> mlist = new ListGenerator(this).generate();
     }
 }
