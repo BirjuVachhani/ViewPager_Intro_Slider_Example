@@ -34,4 +34,9 @@ public class SlideAdapter extends FragmentPagerAdapter {
         DataHolder dataHolder = mlist.get(position);
         return new SlideFragment(dataHolder);
     }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return "PAGE "+(position+1);
+    }
 }
